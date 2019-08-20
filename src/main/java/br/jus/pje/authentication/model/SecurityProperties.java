@@ -21,7 +21,16 @@ public class SecurityProperties {
 		private Resource keyStore;
 		private String keyStorePassword;
 		private String keyPairAlias;
-		private String keyPairPassword;
+		private String keyPairPassword;		
+		private Resource publicKey;
+
+		public Resource getPublicKey() {
+			return publicKey;
+		}
+
+		public void setPublicKey(Resource publicKey) {
+			this.publicKey = publicKey;
+		}		
 
 		public Resource getKeyStore() {
 			return keyStore;

@@ -16,7 +16,7 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        default_schema: core
+        default_schema: public
         jdbc:
           lob:
             non_contextual_creation: true
@@ -27,4 +27,5 @@ security:
     key-store: classpath:keystore.jks
     key-store-password: letmein
     key-pair-alias: mytestkey
-    key-pair-password: changeme    
+    key-pair-password: changeme
+    public-key: classpath:public.txt    
